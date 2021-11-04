@@ -37,18 +37,12 @@ if __name__ == '__main__':
                         help='directory of data')
     parser.add_argument('--batch_size', default=1, type=int, help='batch size')
     parser.add_argument('--num_epoch', default=1000, type=int, help='number of epochs')
-    parser.add_argument('--save_dir', default='save_dir',
-                        type=str,
-                        help='directory to save results')
     parser.add_argument('--outf', type=str, default='logs_csnet', help='path of log files')
     args = parser.parse_args()
 
     ###############################################################################
     # callable methods
     ###############################################################################
-    def try_make_dir(d):
-        if not os.path.isdir(d):
-            os.mkdir(d)
 
     def adjust_learning_rate(opt, epo, lr):
         """Sets the learning rate to the initial LR decayed by 5 every 50 epochs"""
@@ -126,7 +120,6 @@ if __name__ == '__main__':
         print("train_psnr: ", train_psnr)
         writer.add_scalar('psnr on train data', train_psnr, epoch)
         if epoch % 10 == 0:
-            try_make_dir(args.save_dir + '/end_to_end_model/')
             torch.save(model.state_dict(),
                        os.path.join(args.outf, 'model{}.pth'.format(epoch)))
         model.eval()

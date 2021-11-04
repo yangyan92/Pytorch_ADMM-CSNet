@@ -4,7 +4,7 @@
 
 Codes for model in "ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing" (TPAMI 2019)
  
-If you use thses codes, please cite our paper:
+If you use these codes, please cite our paper:
 
 [1] Yan Yang, Jian Sun, Huibin Li, Zongben Xu. ADMM-CSNet: A Deep Learning Approach for Image Compressive Sensing (TPAMI 2019).
 

@@ -31,7 +31,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_dir', default='data/', type=str,
                         help='directory of data')
     parser.add_argument('--batch_size', default=1, type=int, help='batch size')
-    parser.add_argument('--outf', type=str, default='logs_csnet', help='path of log files')
+    parser.add_argument('--outf', type=str, default='csnet_model', help='path of log files')
     args = parser.parse_args()
 
     ###############################################################################

@@ -79,9 +79,9 @@ pip install -r requirements.txt
 
 	Notice:
 
-	The optimizer of pytorch ADMM-CSNet is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results.
+	The optimizer of pytorch ADMM-CSNet is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results. The final tests below are testing to reconstruct complex-valued MR images with 1D Cartesian masks.
 
-	| sampling rate | psnr |
+	| sampling rate | psnr(dB) |
 	| ------ | ------ |
 	| 0.2 | 31.354 |
 	| 0.3 | 34.365 |

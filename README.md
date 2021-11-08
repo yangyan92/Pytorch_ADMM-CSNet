@@ -41,12 +41,11 @@ pip install torchpwl
 
 Replace with the pwl.py file by which we have provided in the torchpwl folder.
 
-
 2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.
    The full datasets contains 100 training data,50 testing data and 50 validating data.
    The mask_20 directory in data represents 20% sample and so on.
 
-3.The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
+3. The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
 Test:
 
 we have provided the final model of 20%,30%,40% sample in csnet_model directory,just replace the model name in test.py.
@@ -61,7 +60,7 @@ tips:For retraining you should change the data_dir and mask name in train.py and
 python train.py
 ```
 
-4.Results
+4. Results
 | Sampling Mask | PSNR |
 | ------ | ------ |
 | 0.2 | 31.354 |

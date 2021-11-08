@@ -10,7 +10,7 @@
 from __future__ import print_function, division
 import os
 import argparse
-from network.CSNet_Layers import CSNetADMMLayer
+from network.CSNet_Layers import ADMMCSNetLayer
 from utils.dataset import get_test_data
 import torch.utils.data as data
 from utils.my_loss import MyLoss
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     # Build model
     ###############################################################################
     print('Loading model ...\n')
-    model = CSNetADMMLayer(mask).cuda()
+    model = ADMMCSNetLayer(mask).cuda()
     model.load_state_dict(torch.load(os.path.join(args.outf, 'cs_net_sample0.2.pth')))
     model.eval()
 

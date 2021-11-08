@@ -36,7 +36,7 @@ This installation guide shows you how to set up the environment for running our 
 First clone the ADMM-CSNET repository
 ```
 git clone https://github.com/yangyan92/Pytorch_ADMM-CSNet.git
-cd https://github.com/lixing0810/Pytorch_ADMM-CSNet
+cd Pytorch_ADMM-CSNet
 ```
 Then start a virtual environment with new environment variables nad
 ```

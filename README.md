@@ -12,7 +12,7 @@ http://gr.xjtu.edu.cn/web/jiansun/publications
 
 All rights are reserved by the authors.
 
-Yan Yang -2021/11/04. For more detail or traning data, feel free to contact: yangyan92@stu.xjtu.edu.cn
+Xing Li and Yan Yang -2021/11/04. For more detail or traning data, feel free to contact: yangyan92@stu.xjtu.edu.cn
 
 
 ***********************************************************************************************************

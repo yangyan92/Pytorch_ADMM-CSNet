@@ -67,7 +67,7 @@ if __name__ == '__main__':
     ###############################################################################
     # mask
     ###############################################################################
-    dir = 'data/mask'
+    dir = 'data/mask_20'
     data = loadmat(join(dir, os.listdir(dir)[0]))
     mask_data = data['mask']
     mask = ifftshift(torch.Tensor(mask_data)).cuda()

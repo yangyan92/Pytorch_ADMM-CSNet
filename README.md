@@ -67,5 +67,5 @@ python train.py
 
 Notice:
 
-The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS
+The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results.
 ***********************************************************************************************************

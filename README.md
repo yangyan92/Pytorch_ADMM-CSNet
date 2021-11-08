@@ -33,15 +33,15 @@ Download data and organise as follows in the directory:
 ## Installation
 This installation guide shows you how to set up the environment for running our code using conda.
 
-First clone the ADMM-CSNET repository
+First clone the ADMM-CSNet repository
 ```
 git clone https://github.com/yangyan92/Pytorch_ADMM-CSNet.git
 cd Pytorch_ADMM-CSNet
 ```
 Then start a virtual environment with new environment variables nad
 ```
-conda create --name ADMM_CSNET python=3.9
-conda activate ADMM_CSNET 
+conda create --name ADMM-CSNet python=3.9
+conda activate ADMM-CSNet 
 ```
 Install PyTorch 
 ```
@@ -54,13 +54,13 @@ pip install -r requirements.txt
 
 ## Usage:
 
-1. The nonlinear layer of ADMM-CSNET in pytorch version was supported by the torchpwl package.Replace torchpwl package in your env with which we have provided in the torchpwl folder after installing. 
+1. The nonlinear layer of ADMM-CSNet in pytorch version was supported by the torchpwl package. Replace torchpwl package in your env with which we have provided in the torchpwl folder after installing. 
 
-2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.
-   The full datasets contains 100 training data,50 testing data and 50 validating data.
+2. We have provided a training mri image and mask in the data directory. Please replace the dataset downlowded in the google cloud.
+   The full datasets contains 100 training data, 50 testing data and 50 validating data.
    The mask_20 directory in data represents 20% sample and so on.
 
-3. The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.we have provided the final model of 20%,30%,40% sample in csnet_model directory,just replace the model name in test.py.
+3. The net of training was implemented by end-to-end in ADMM-CSNet of pytorch version. We have provided the final model of 20%, 30%, 40% sample in csnet_model directory, just replace the model name in test.py.
 
 	Test:
 	```
@@ -76,9 +76,9 @@ pip install -r requirements.txt
  
 5. Results
    Notice:
- The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results.
+ The optimizer of pytorch ADMM-CSNet is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results.
  
-| Sampling Mask | PSNR |
+| sampling rate | psnr |
 | ------ | ------ |
 | 0.2 | 31.354 |
 | 0.3 | 34.365 |

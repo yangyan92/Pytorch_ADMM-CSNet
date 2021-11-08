@@ -1,6 +1,6 @@
 """
     ADMM_-CSNET test example (v1) with MR slices
-    By Yan Yang, Jian Sun, Huibin Li, Zongben Xu
+    By Xing Li, Yan Yang, Jian Sun, Huibin Li, Zongben Xu
 
     Please cite the below paper for the code:
 

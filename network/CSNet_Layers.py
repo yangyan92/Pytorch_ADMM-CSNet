@@ -8,7 +8,7 @@ from utils.fftc import *
 import torch
 
 
-class CSNetADMMLayer(nn.Module):
+class ADMMCSNetLayer(nn.Module):
     def __init__(
         self,
         mask,
@@ -21,7 +21,7 @@ class CSNetADMMLayer(nn.Module):
         Args:
 
         """
-        super(CSNetADMMLayer, self).__init__()
+        super(ADMMCSNetLayer, self).__init__()
 
         self.rho = nn.Parameter(torch.tensor([0.1]), requires_grad=True)
         self.gamma = nn.Parameter(torch.tensor([1.0]), requires_grad=True)

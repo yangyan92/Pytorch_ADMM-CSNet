@@ -20,9 +20,14 @@ Yan Yang -2021/11/04. For more detail or traning data, feel free to contact: yan
 
 
 ## Data link: 
-https://pan.baidu.com/s/1nvf07g_OmMAnFAbhG1orIQ 
-passwards：sdsq 
+https://drive.google.com/drive/folders/1UhQ01pdmO11Agc5sM61Mt7KQTN9LytNt
 
+Download data and organise as follows in the directory:
+# For dataset         
+└── data       
+      ├── train
+      ├── test
+      ├── valid
 
 ## Usage:
 
@@ -36,20 +41,28 @@ pip install torchpwl
 Replace with the pwl.py file by which we have provided in the torchpwl folder.
 
 
-2. We have provided a training mri image and mask in the data directory,please contact us for more training data.
+2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.
+   The full datasets contains 100 training data,50 testing data and 50 validating data.
 
 3.The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
+Test:
+
+```
+python test.py
+```
+
 Training:
 
 ```
-python main.py
+python train.py
 ```
 
+4.Results
+Sampling Mask 	 	PSNR
+0.2  	           31.354 	
+0.3 	            34.365 	
+0.4 	 	          37.153 
+Notice:
+
+The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS
 ***********************************************************************************************************
-
-
-
-
-
-
-

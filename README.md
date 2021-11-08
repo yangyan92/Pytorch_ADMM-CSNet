@@ -44,6 +44,7 @@ Replace with the pwl.py file by which we have provided in the torchpwl folder.
 
 2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.
    The full datasets contains 100 training data,50 testing data and 50 validating data.
+   The mask_20 directory in data represents 20% sample and so on.
 
 3.The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
 Test:

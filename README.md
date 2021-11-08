@@ -49,12 +49,14 @@ Replace with the pwl.py file by which we have provided in the torchpwl folder.
 3.The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
 Test:
 
+we have provided the final model of 20%,30%,40% sample in csnet_model directory,just replace the model name in test.py.
 ```
 python test.py
 ```
 
 Training:
 
+tips:For retraining you should change the data_dir and mask name in train.py and saved in the logs_csnet directory. 
 ```
 python train.py
 ```

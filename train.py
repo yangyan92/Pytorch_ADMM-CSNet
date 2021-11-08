@@ -12,7 +12,7 @@ import sys
 import os
 import torch
 import argparse
-from network.CSNet_Layers import CSNetADMMLayer
+from network.CSNet_Layers import ADMMCSNetLayer
 from utils.dataset import get_data
 import torch.utils.data as data
 from utils.my_loss import MyLoss
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     ###############################################################################
     # ADMM-CSNET model
     ###############################################################################
-    model = CSNetADMMLayer(mask).cuda()
+    model = ADMMCSNetLayer(mask).cuda()
 
     ###############################################################################
     # Adam optimizer

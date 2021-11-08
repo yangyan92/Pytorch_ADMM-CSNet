@@ -4,3 +4,4 @@ h5py==3.5.0
 tensorboardX>=2.1.0
 torchpwl>=0.1.0
 packaging>=20.8
+six>=1.15.0

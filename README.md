@@ -34,31 +34,29 @@ Download data and organise as follows in the directory:
 
 1. The nonlinear layer of ADMM-CSNET in pytorch version was supported by the torchpwl package.Replace with the pwl.py file by which we have provided in the torchpwl folder after installing. 
 
-Installation:
-```
-pip install torchpwl
-```
-
+	Installation:
+	```
+	pip install torchpwl
+	```
 2. We have provided a training mri image and mask in the data directory,please replace the dataset downlowded in the google cloud.
    The full datasets contains 100 training data,50 testing data and 50 validating data.
    The mask_20 directory in data represents 20% sample and so on.
 
-3. The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.
-   we have provided the final model of 20%,30%,40% sample in csnet_model directory,just replace the model name in test.py.
+3. The net of training was implemented by end-to-end in ADMM-CSNET of pytorch version.we have provided the final model of 20%,30%,40% sample in csnet_model directory,just replace the model name in test.py.
 
-Test:
-```
-python test.py
-```
+	Test:
+	```
+	python test.py
+	```
+ 
+4. For retraining you should change the data_dir and mask name in train.py and saved in the logs_csnet directory.  
 
-Training:
-tips:For retraining you should change the data_dir and mask name in train.py and saved in the logs_csnet directory. 
-
-```
-python train.py
-```
-
-4. Results
+	Training:
+	```
+	python train.py
+	```
+ 
+5. Results
    Notice:
  The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS may cause the difference in final results.
  

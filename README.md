@@ -23,12 +23,13 @@ Yan Yang -2021/11/04. For more detail or traning data, feel free to contact: yan
 https://drive.google.com/drive/folders/1UhQ01pdmO11Agc5sM61Mt7KQTN9LytNt
 
 Download data and organise as follows in the directory:
-# For dataset         
-└── data       
-      ├── train
-      ├── test
-      ├── valid
-
+```
+### For dataset         
+└── data
+    ├── train
+    ├── test
+    ├── validate
+```
 ## Usage:
 
 1. The nonlinear layer of ADMM-CSNET in pytorch version was supported by the torchpwl package.
@@ -58,10 +59,12 @@ python train.py
 ```
 
 4.Results
-Sampling Mask 	 	PSNR
-0.2  	           31.354 	
-0.3 	            34.365 	
-0.4 	 	          37.153 
+| Sampling Mask | PSNR |
+| ------ | ------ |
+| 0.2 | 31.354 |
+| 0.3 | 34.365 |
+| 0.4 | 37.153 |
+
 Notice:
 
 The optimizer of pytorch ADMM-CSNET is adam as its avaliable and faster training in big data which of matlab version used by LBFGS

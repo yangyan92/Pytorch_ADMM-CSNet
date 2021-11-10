@@ -20,7 +20,7 @@ Xing Li and Yan Yang -2021/11/04. For more detail or traning data, feel free to 
 
 
 ## Data link: 
-https://drive.google.com/drive/folders/1UhQ01pdmO11Agc5sM61Mt7KQTN9LytNt
+https://drive.google.com/drive/folders/1UhQ01pdmO11Agc5sM61Mt7KQTN9LytNt?usp=sharing
 
 Download data and organise as follows in the directory:
 ```
